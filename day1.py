@@ -2,7 +2,7 @@ def two_entries_multiplier(numbers, sum):
     i = 0
     while i < len(numbers):
         j = i + 1
-        if numbers[i] < 2020:
+        if numbers[i] < sum:
             while j < len(numbers):
                 if numbers[i] + numbers[j] == sum:
                     return numbers[i] * numbers[j]
@@ -14,9 +14,9 @@ def three_entries_multiplier(numbers, sum):
     i = 0
     while i < len(numbers):
         j = i + 1
-        if numbers[i] < 2020:
+        if numbers[i] < sum:
             while j < len(numbers):
-                if numbers[i] + numbers[j] < 2020:
+                if numbers[i] + numbers[j] < sum:
                     k = j + 1
                     while k < len(numbers):
                         if numbers[i] + numbers[j] + numbers[k] == sum:
